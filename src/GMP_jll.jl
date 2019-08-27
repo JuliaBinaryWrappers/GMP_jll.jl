@@ -5,7 +5,7 @@ using Pkg, Pkg.BinaryPlatforms, Pkg.Artifacts, Libdl
 artifacts_toml = joinpath(@__DIR__, "Artifacts.toml")
 
 # Extract all platforms
-artifacts = Pkg.Artifacts.load_artifacts_toml(artifacts_toml, UUID("97f400b6-f10a-52d5-9028-258118602db7"))
+artifacts = Pkg.Artifacts.load_artifacts_toml(artifacts_toml, UUID("781609d7-10c4-51f6-84f2-b8444358ff6d"))
 platforms = [Pkg.Artifacts.unpack_platform(e, "GMP", artifacts_toml) for e in artifacts["GMP"]]
 
 # Filter platforms based on what wrappers we've generated on-disk
