@@ -2,8 +2,6 @@
 export libgmp
 
 ## Global variables
-const PATH_list = String[]
-const LIBPATH_list = String[]
 PATH = ""
 LIBPATH = ""
 LIBPATH_env = "DYLD_FALLBACK_LIBRARY_PATH"
@@ -30,7 +28,6 @@ function __init__()
 
     # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
-
     global libgmp_path = abspath(joinpath(artifact"GMP", libgmp_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations

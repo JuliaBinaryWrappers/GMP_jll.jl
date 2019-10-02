@@ -2,6 +2,11 @@ module GMP_jll
 using Pkg, Pkg.BinaryPlatforms, Pkg.Artifacts, Libdl
 import Base: UUID
 
+# We put these inter-JLL-package API values here so that they are always defined, even if there
+# is no underlying wrapper held within this JLL package.
+const PATH_list = String[]
+const LIBPATH_list = String[]
+
 # Load Artifacts.toml file
 artifacts_toml = joinpath(@__DIR__, "..", "Artifacts.toml")
 
@@ -15,11 +20,12 @@ platforms = filter(p -> isfile(joinpath(@__DIR__, "wrappers", triplet(p) * ".jl"
 # From the available options, choose the best platform
 best_platform = select_platform(Dict(p => triplet(p) for p in platforms))
 
+# Silently fail if there's no binaries for this platform
 if best_platform === nothing
-    error("Unable to load GMP; unsupported platform $(triplet(platform_key_abi()))")
+    @debug("Unable to load GMP; unsupported platform $(triplet(platform_key_abi()))")
+else
+    # Load the appropriate wrapper
+    include(joinpath(@__DIR__, "wrappers", "$(best_platform).jl"))
 end
-
-# Load the appropriate wrapper
-include(joinpath(@__DIR__, "wrappers", "$(best_platform).jl"))
 
 end  # module GMP_jll
