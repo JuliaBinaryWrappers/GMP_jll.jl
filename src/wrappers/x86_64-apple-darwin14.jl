@@ -24,11 +24,13 @@ const libgmp = "@rpath/libgmp.10.dylib"
 Open all libraries
 """
 function __init__()
-    global prefix = abspath(joinpath(@__DIR__, ".."))
+    global artifact_dir = abspath(artifact"GMP")
 
     # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
-    global libgmp_path = abspath(joinpath(artifact"GMP", libgmp_splitpath...))
+    # We first need to add to LIBPATH_list the libraries provided by Julia
+    append!(LIBPATH_list, [joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)])
+    global libgmp_path = normpath(joinpath(artifact_dir, libgmp_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.

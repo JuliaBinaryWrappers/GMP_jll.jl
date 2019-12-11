@@ -1,113 +1,113 @@
 [[GMP]]
+arch = "armv7l"
+git-tree-sha1 = "517f8038695aba7aa5e64f624ff109e6969fd819"
+libc = "glibc"
+os = "linux"
+
+    [[GMP.download]]
+    sha256 = "40392c2ed2df591df18ecb3ec4c2b17963d2613854a963848d54040cb2635fb7"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.arm-linux-gnueabihf.tar.gz"
+[[GMP]]
 arch = "x86_64"
-git-tree-sha1 = "2461451f012de70a8c5c47b2053a72b3338fcb70"
+git-tree-sha1 = "a0bc635eb2421128124cdc8c8c30880fde9e9281"
+libc = "glibc"
+os = "linux"
+
+    [[GMP.download]]
+    sha256 = "d6aa6c376ecf42a5b7640dd09876d7db2c72969a70643c91e4dd54621cf04cf6"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.x86_64-linux-gnu.tar.gz"
+[[GMP]]
+arch = "aarch64"
+git-tree-sha1 = "189210d21e0e25f7376806513cafee84d13fd8d0"
+libc = "musl"
+os = "linux"
+
+    [[GMP.download]]
+    sha256 = "2a883b7b79cb8d77becb38c8aef92a40f6fda67c132d0721a8615115ed5d5e7e"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.aarch64-linux-musl.tar.gz"
+[[GMP]]
+arch = "powerpc64le"
+git-tree-sha1 = "207a75ee339fc47441aa96f35e13c9bca2ab2292"
+libc = "glibc"
+os = "linux"
+
+    [[GMP.download]]
+    sha256 = "ab323b6f1780cda3ec0f2f3f382635c5675d24f4023c503a3657085fe0012c96"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.powerpc64le-linux-gnu.tar.gz"
+[[GMP]]
+arch = "x86_64"
+git-tree-sha1 = "714206d214dbd73d7c30adc05d52544fdc6f7a80"
 os = "macos"
 
     [[GMP.download]]
-    sha256 = "7787c86ac9aece2c7da4f821b56c284486c6540570a553a45890b459957ecb42"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.x86_64-apple-darwin14.tar.gz"
+    sha256 = "2597b034fdcb7d7087b6d8c6b505e3319749aacd03a9bef73f14c4fc817a0390"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.x86_64-apple-darwin14.tar.gz"
+[[GMP]]
+arch = "x86_64"
+git-tree-sha1 = "e4bd84c9f4a300772fd0ae4ed448d0fddebbd7e7"
+libc = "musl"
+os = "linux"
+
+    [[GMP.download]]
+    sha256 = "dc99a77b1ac5137d586fcece4675c9047c1f14961dd1a94ccb11d0cc45378aa9"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.x86_64-linux-musl.tar.gz"
+[[GMP]]
+arch = "x86_64"
+git-tree-sha1 = "cf589eda7873e2579e9ac47e8a7c3826baa94a3a"
+os = "windows"
+
+    [[GMP.download]]
+    sha256 = "bd89e02a79c105df34b06eb4be30d759d92d9fd74bad061e06c1b4dfd955cd2e"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.x86_64-w64-mingw32.tar.gz"
 [[GMP]]
 arch = "i686"
-git-tree-sha1 = "6355b85fdaa7a7e3613b52e4f0a6b10eb85c2b98"
+git-tree-sha1 = "7101070a8d500fa45597604e93e46bc324c802ca"
 libc = "glibc"
 os = "linux"
 
     [[GMP.download]]
-    sha256 = "5fb1eed4b56105b9b1234e5edd4f168a920aad30f5edbdadfe5ade7292c73182"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.i686-linux-gnu.tar.gz"
+    sha256 = "5afebed0e8f3814b167bca497fc64760198e6b72ce07503a256d8b3de0d93105"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.i686-linux-gnu.tar.gz"
+[[GMP]]
+arch = "aarch64"
+git-tree-sha1 = "611b884f108a619fd43a1f8b880eab6e42edf9cc"
+libc = "glibc"
+os = "linux"
+
+    [[GMP.download]]
+    sha256 = "09e0854fad4850a7314d655fb0cb575c2797013e5e2cfe42eeb3cc55446d2f60"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.aarch64-linux-gnu.tar.gz"
+[[GMP]]
+arch = "i686"
+git-tree-sha1 = "2a5d875c7764e963da8785518cff2e470e0ae304"
+libc = "musl"
+os = "linux"
+
+    [[GMP.download]]
+    sha256 = "c528a5271b2c11161df40125552a005e8d632c4e2644678438b5fe258beaf979"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.i686-linux-musl.tar.gz"
 [[GMP]]
 arch = "x86_64"
-git-tree-sha1 = "2107026ffb18062ec007e24c293df5c169b1d8b4"
+git-tree-sha1 = "814422a48b1945fbdd3b16991e1a016566081607"
 os = "freebsd"
 
     [[GMP.download]]
-    sha256 = "7dd8aafd5846e4e213ff75c7904310e4b66e832c9be0e40610a3e8537f9dc80e"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.x86_64-unknown-freebsd11.1.tar.gz"
+    sha256 = "2aecb5aa2566ba025cf9911d89dcf09d88f60ff8b911dd4e51b0647ea6a4fca3"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.x86_64-unknown-freebsd11.1.tar.gz"
 [[GMP]]
-arch = "powerpc64le"
-git-tree-sha1 = "fcfc864a2e20cb73a33d104aee64cccca7777ec9"
-libc = "glibc"
-os = "linux"
-
-    [[GMP.download]]
-    sha256 = "c6be2dbe4f9d646bae8e9cce65754c042e97b5de9a0e7bab266370a11af3b2c8"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.powerpc64le-linux-gnu.tar.gz"
-[[GMP]]
-arch = "x86_64"
-git-tree-sha1 = "1b592174c598169c2e478d1544a265b6c155a138"
-libc = "musl"
-os = "linux"
-
-    [[GMP.download]]
-    sha256 = "f1dcca178f556526df4d0cc3e860f9519d618986dcd9ec0940f7e4b7a69e8f78"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.x86_64-linux-musl.tar.gz"
-[[GMP]]
-arch = "x86_64"
-git-tree-sha1 = "8e47356717edb1ff37cef9493db4bb706527d3fd"
-libc = "glibc"
-os = "linux"
-
-    [[GMP.download]]
-    sha256 = "c46d28324174945d17eb361be78a207fff04d6dea0f8dc544af88b5ae7d5e6b9"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.x86_64-linux-gnu.tar.gz"
-[[GMP]]
-arch = "x86_64"
-git-tree-sha1 = "50649f2a1e14f2a2c2f5a995e64321acb1dba7f3"
+arch = "i686"
+git-tree-sha1 = "5ed265f7b5a35bc4a11a3ed3b4afcaf8d1e6c667"
 os = "windows"
 
     [[GMP.download]]
-    sha256 = "4fd82486c2dabab279df94050440bba66c2ba6a3bbf431ac56bf23dcccaffe3a"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.x86_64-w64-mingw32.tar.gz"
-[[GMP]]
-arch = "aarch64"
-git-tree-sha1 = "92c243ff1e700ac63ff37ae435fb14a304e81947"
-libc = "musl"
-os = "linux"
-
-    [[GMP.download]]
-    sha256 = "6cf7e572a4bba747c658394e13186f9b4265060822c92838a17c874ff394217c"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.aarch64-linux-musl.tar.gz"
+    sha256 = "5d4bbbb3bde9ad1cd202aefd32d7f6f4edf54ee53ee5dae0a5c2b2c927e296f3"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.i686-w64-mingw32.tar.gz"
 [[GMP]]
 arch = "armv7l"
-git-tree-sha1 = "5865dc3a5d6f4dd804a48c1ea6dc2d2e6e0ec951"
-libc = "glibc"
-os = "linux"
-
-    [[GMP.download]]
-    sha256 = "47a1d03b44a00613175431fe7495c411d0fed54154628bc6ab3a08284b40f325"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.arm-linux-gnueabihf.tar.gz"
-[[GMP]]
-arch = "i686"
-git-tree-sha1 = "ad857524bfea6b48edf0615015ce13a4e0977bbc"
+git-tree-sha1 = "204c1bb4cb82d9c704c0fdf565d75fcf564e2452"
 libc = "musl"
 os = "linux"
 
     [[GMP.download]]
-    sha256 = "ba02af7ae3fa259a43a724d2b46139d9d8eb06a384e0fff1021bd06c7e14f9a3"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.i686-linux-musl.tar.gz"
-[[GMP]]
-arch = "armv7l"
-git-tree-sha1 = "646e15e8de2e7f4dc1291ba6d8953ea0d6e4d3ee"
-libc = "musl"
-os = "linux"
-
-    [[GMP.download]]
-    sha256 = "7bd0149ed2827778b226bb0122e6ad6c93d77c90ddf2722eb7a6c965abb5f4e0"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.arm-linux-musleabihf.tar.gz"
-[[GMP]]
-arch = "aarch64"
-git-tree-sha1 = "7d418e5e98764349d7ffdf6a3628f769936ee4bb"
-libc = "glibc"
-os = "linux"
-
-    [[GMP.download]]
-    sha256 = "70ffec859afe0d8a17dced1dd3ed62a34329e2e5e297bb954c0d7d380fd2dac4"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.aarch64-linux-gnu.tar.gz"
-[[GMP]]
-arch = "i686"
-git-tree-sha1 = "a0d4e16d7de91e2459e74f9bdf39ebb8fb872a62"
-os = "windows"
-
-    [[GMP.download]]
-    sha256 = "55d184b8dd867919f229931a58ac7482b8615c841f85515012a1e8662dcae9e3"
-    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+3/GMP.v6.1.2.i686-w64-mingw32.tar.gz"
+    sha256 = "99ae93de984ab1464dfb6f393c7d6a70b8ae5b313377aa55257bf5084824b84c"
+    url = "https://github.com/JuliaBinaryWrappers/GMP_jll.jl/releases/download/GMP-v6.1.2+4/GMP.v6.1.2.arm-linux-musleabihf.tar.gz"
