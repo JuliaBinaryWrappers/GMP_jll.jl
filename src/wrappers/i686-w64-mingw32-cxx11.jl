@@ -35,26 +35,29 @@ libgmpxx_handle = C_NULL
 const libgmpxx = "libgmpxx-4.dll"
 
 
+# Inform that the wrapper is available for this platform
+wrapper_available = true
+
 """
 Open all libraries
 """
 function __init__()
-    global artifact_dir = abspath(artifact"GMP")
+    # This either calls `@artifact_str()`, or returns a constant string if we're overridden.
+    global artifact_dir = find_artifact_dir()
 
-    # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
     global libgmp_path = normpath(joinpath(artifact_dir, libgmp_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
-    global libgmp_handle = dlopen(libgmp_path)
+    global libgmp_handle = dlopen(libgmp_path, RTLD_LAZY | RTLD_DEEPBIND)
     push!(LIBPATH_list, dirname(libgmp_path))
 
     global libgmpxx_path = normpath(joinpath(artifact_dir, libgmpxx_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
-    global libgmpxx_handle = dlopen(libgmpxx_path)
+    global libgmpxx_handle = dlopen(libgmpxx_path, RTLD_LAZY | RTLD_DEEPBIND)
     push!(LIBPATH_list, dirname(libgmpxx_path))
 
     # Filter out duplicate and empty entries in our PATH and LIBPATH entries
@@ -65,4 +68,3 @@ function __init__()
 
     
 end  # __init__()
-
