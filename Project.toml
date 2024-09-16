@@ -1,6 +1,6 @@
 name = "GMP_jll"
 uuid = "781609d7-10c4-51f6-84f2-b8444358ff6d"
-version = "6.3.0+1"
+version = "6.2.1+7"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
