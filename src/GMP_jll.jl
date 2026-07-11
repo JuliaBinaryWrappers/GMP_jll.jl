@@ -5,5 +5,5 @@ using Base: UUID
 import JLLWrappers
 
 JLLWrappers.@generate_main_file_header("GMP")
-JLLWrappers.@generate_main_file("GMP", UUID("781609d7-10c4-51f6-84f2-b8444358ff6d"))
+JLLWrappers.@generate_main_file("GMP", Base.UUID("781609d7-10c4-51f6-84f2-b8444358ff6d"))
 end  # module GMP_jll
